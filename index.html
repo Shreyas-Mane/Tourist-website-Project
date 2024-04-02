@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tourist Website</title>
+</head>
+<body>
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<navigation page>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <header class="container">
+        <nav class="navbar">
+            <div class="right">
+              <img src="navlogo.png" alt="logo">
+              <ul class="menus">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Destinations">Destinations</a></li>
+                <li><a href="#About Us">About us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="searchbox">
+                <span class="fa fa-search"></span>
+                <input type="search" placeholder="What are you looking for">
+                <button type="search">Search</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<main page>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div class="main">
+            <div class="place">
+                <h2>Where you want to go?</h2>
+                <input type="text" id="goto" placeholder="Where to go">
+                <input type="date" id="whento" placeholder="Date">
+                <select>
+                    <optgroup label="Tour Package">
+                        <option id="type1" value="solo">Solo Travel</option>
+                        <option id="type1" value="company vacation">Company Tour</option>
+                        <option id="type1" value="family tour">Family Tour</option>
+                    </optgroup>
+                </select>
+                <button id="place-search" type="button" onclick="checkDetail()">Search</button>
+            </div>
+
+            <div class="destination">
+                <h1>Popular Destination</h1>
+                <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+            </div>
+
+            <div class="gallery">
+                <div class="boxy" id="box-1" style="background-image: url(1.png);">Italy</div>
+                <div class="boxy" id="box-1" style="background-image: url(2.png);">Brazil</div>
+                <div class="boxy" id="box-1" style="background-image: url(3.png);">America</div>
+                <div class="boxy" id="box-1" style="background-image: url(4.png);">Nepal</div>
+                <div class="boxy" id="box-1" style="background-image: url(5.png);">Maldives</div>
+                <div class="boxy" id="box-1" style="background-image: url(6.png);">Indonesia</div>
+            </div>
+
+           <div class="newsletter">
+            <div class="text">
+                <h2>Subscribe Our Newsletter</h2>
+                <p>Subscribe newsletter to get offers and <br>about new places to discover.</p>
+            </div>
+            <div class="userinput" >
+                <form id="form" action="/">
+                    <input id="mail" type="text" name="username" placeholder="Your mail">
+                    <button id="btn" type="button" onclick="validate()">Subscribe</button>                    
+                </form>
+            </div>
+           </div> 
+
+           <div class="popularplace">
+            <h1>Popular Places</h1>
+            <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+           </div>
+           <div class="imgs">
+            <div class="pagecard">
+                  <div class="kart1">  
+                        <img src="place1.png" alt="">
+                    <div class="contain">
+                        <h2 id="font">California</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div> 
+
+                  <div class="kart1">
+                        <img src="place2.png" alt="">
+                    <div class="contain">
+                        <h2 id="font">Korola Megna</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div> 
+
+                  <div class="kart1">
+                        <img src="place3.png" alt="">
+                    <div class="contain">
+                        <h2 id="font">London</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div> 
+
+                <div class="kart1">
+                    <img src="place4.png" alt="">
+                    <div class="contain">
+                        <h2 id="font">Miami Beach</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="kart1">
+                    <img src="place5.png" alt="">
+
+                    <div class="contain">
+                        <h2 id="font">California</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+
+                <div class="kart1">
+                    <img src="place6.png" alt="">
+                    <div class="contain">
+                        <h2 id="font">Saintmartine Iceland</h2>
+                        <p>United State of America</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bttn">
+            <button id="bt" value="submit">More Places</button>
+        </div>
+
+           <!-- our add on quality -->
+
+           <div class="journey">
+               <div class="addon train">
+                 <img src="1.svg" alt="train image">
+                 <h1>Comfortable Journey</h1>
+                 <p>A wonderful serenity has taken to the <br>possession of my entire soul.</p>
+               </div>
+
+               <div class="addon hotel">
+                 <img src="2.svg" alt="Hotel image">
+                 <h1>Comfortable Journey</h1>
+                 <p>A wonderful serenity has taken to the <br>possession of my entire soul.</p>
+               </div>
+
+               <div class="addon world">
+                 <img src="3.svg" alt="earth image">
+                 <h1>Comfortable Journey</h1>
+                 <p>A wonderful serenity has taken to the<br> possession of my entire soul.</p>
+               </div>
+        </div>
+    </div>
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<About Us >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="about-us">
+
+      <div class="bg-img">
+        <h1 id="abt">About Us</h1>
+        <p id="pabt">Pixel Perfect Design With Awesome Contents
+        </p>
+      </div>
+
+      <div class="our-story">
+        <h2>Our Story</h2>
+        <p> Consulting represents success at realizing the company is going in the wrong direction. The only time<br> 
+            the company fails is when it is not possible to do a turnaround anymore. We help companies pivot into<br>
+            more profitable directions where they can expand and grow. It is inevitable that companies will end<br>
+            up making a few mistakes; we help them correct these mistakes.<br>
+            <br>
+            Consulting represents success at realizing the company is going in the wrong direction. The only time<br>
+            the company fails is when it is not possible to do a turnaround anymore. We help companies pivot into <br>
+            more profitable directions where they can expand and grow. It is inevitable that companies will end <br>
+            up making a few mistakes; we help them correct these mistakes.</p>
+      </div>
+
+      <div class="img-grid">
+        <div class="c1" id="cd1" style="background-image: url(1.png);"></div>
+        <div class="c1" id="cd1" style="background-image: url(tips3.png);"></div>
+        <div class="c1" id="cd1" style="background-image: url(tips1.png);"></div>
+      </div>
+    </div>
+
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<contact Us Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   -->
+ <div class="contact">
+   <div class="bgr-img">
+    <h1 id="hcnt">Contact</h1>
+    <p id="pcnt">Pixel Perfect Design With Awesome Contents</p>
+   </div>
+   <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d865.5701845013049!2d73.88411836335547!3d17.956225200030975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDU3JzIyLjgiTiA3M8KwNTMnMDEuNiJF!5e0!3m2!1sen!2sin!4v1707062274044!5m2!1sen!2sin" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <div class="feedback">
+    <div class="t1">
+        <h1>Get In Touch</h1>
+        <form>
+            <textarea placeholder="Enter Message"></textarea><br><br>
+            <input type="text" name="name" placeholder="Your Name" required >
+            <input type="text" name="email" placeholder="Your Email" required ><br><br>
+            <input type="text" name="Subject" placeholder="Enter Subject" required ><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <div class="t2">
+        <h2><i class="fa fa-home" aria-hidden="true"></i> Buttonwood, California.</h2><p>Rosemead, CA 91770</p><br><br>
+        <h2><i class="fa fa-phone-square" aria-hidden="true"></i> +1 253 565 2365</h2><p>Mon to Fri 9am to 6pm</p></i><br><br>
+       <h2> <i class="fa fa-envelope-o" aria-hidden="true"></i> support@worldtravel.com</h2><p>Send us your query anytime!</p></i>
+    </div>    
+    </div>    
+   </div>
+ </div>
+
+    <footer>
+        <div class="footer-section"> 
+            <div class="our-info">
+                <div class="address">
+                 <p>7th flora, 300/DQueens road, greek
+                     lane New York-1782
+                     +91 484 380 1695
+                     contact@WorldTravel.com</p><br><br>
+
+                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                     <i class="fa fa-pinterest" aria-hidden="true"></i>
+                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div>
+                <div class="company">
+                 <h3>Company</h3>
+                 <div class="list"></div>
+                    <ul>
+                     <li id="about">Pricing</li>
+                     <li id="about">About</li>
+                     <li id="about">Gallery</li>
+                     <li id="about">Contact</li>
+                    </ul>
+                </div>
+                <div class="popdest">
+                    <h3>Popular Destination</h3>
+                <div class="country">
+                    <ul class="c">
+                        <li id="ab">Indonesia</li>
+                        <li id="ab">India</li>
+                         <li id="ab">Italy</li>
+                         <li id="ab">Franch</li>
+                    </ul>
+    
+                     <ul class="c">
+                         <li id="ab">America</li>
+                         <li id="ab">Switzerland</li>
+                         <li id="ab">Canada</li>
+                         <li id="ab">England</li>
+                     </ul>
+                </div>
+                </div> 
+            </div>
+
+           <div class="rights-section">
+            <hr>
+            <p id="trademrk">
+                Copyright &copy;2024 All rights reserved | This Website is made with &hearts; by <span>Shreyas</span>
+            </p>
+           </div>
+        </div>
+    </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>

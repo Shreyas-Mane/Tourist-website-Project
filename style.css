@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<navigation page>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('web backg.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 98vh;
+
+}
+ 
+.navbar{
+    background-color: #363675;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+.right img{
+    height: 100px;
+    width: 100px;
+}
+
+.menus{
+    display: flex;
+    text-align: center;
+}
+.menus li {
+    margin-top: -10px;
+    list-style: none;
+    padding: 0px 10px; 
+    
+}
+
+
+
+.menus li a{
+    border: none;
+    text-decoration: none;
+    color: #B0BF1A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+
+}
+
+.menus li:hover a{
+    color: tomato;
+    
+}
+.searchbox{
+    margin-left: 70%;
+    /* float: right; */
+    width: 350px;
+    height: 20px; 
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: flex;
+    padding: 8px; 
+    margin-top: -75px;
+    color: white;
+
+}
+.fa-search{
+    font-size: 20px;
+    color: white;
+}
+
+.searchbox input{
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 15px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.searchbox ::placeholder{
+    color: white;
+}
+
+.searchbox button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: tomato;
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px; 
+}
+
+.searchbox button:hover{
+    background-color: lightseagreen;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Main page>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+.main{
+    text-align: center;
+    width: 100%;
+}
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<where to go section>>>>>>>>>>>>>>>>>>>>  */
+
+.place{
+     background-color: #363675;
+     height: 150px;
+     width: 100%;
+}
+
+.place h2{
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.place input,select{
+    margin-top: 20px;
+     height: 48px;
+     width: 18%;
+     text-align: center;
+     border-radius: 7px;
+     background: transparent;
+     border: 01px solid white;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.place ::placeholder, input[type=text]{
+    font-size: 15px;
+    color: white;
+}
+
+.place input[type=date] {
+    color: white;
+    font-size: 15px;
+}
+ 
+
+select optgroup{
+    color: black;
+}
+#place-search{
+    height: 48px;
+     width: 8%;
+     border-radius: 5px 5px 5px 5px;
+     border: none;
+     background-color: tomato;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 15px;
+}
+
+#place-search:hover{
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<popular destination>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.destination{
+    margin-top: 12%;
+}
+
+.destination h1{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 40px;
+}
+
+.destination p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<images>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+.gallery{
+   
+    /* background-color: #B0BF1A; */
+    height: 700px;
+    width: 100%;
+    flex-basis:10%;
+    display: grid;
+    gap: 15px; 
+    grid-template-columns: repeat(3,2fr);
+    grid-auto-rows: 320px;
+
+}
+
+.boxy{
+    margin: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: overlay;  
+    transition: all 1s ease-in-out; 
+}
+
+.boxy:hover{
+     background-color: #717171;
+     background-position: center;
+     box-shadow: 0 0 4px white;
+     cursor: pointer;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<newsletter>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.newsletter{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #2C3E50;
+    height: 200px;
+    width: 100%;
+}
+
+.text{
+    padding-top: 20px;
+    justify-content: center;
+    height: 70%;
+    width: 25%;
+    align-items: center;
+    /* background-color: #B0BF1A; */
+
+}
+
+.text h2{
+    padding-top: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.text p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gainsboro;
+   
+}
+.userinput{
+    height: 30%;
+    width: 30%;
+    /* background-color: greenyellow; */
+    padding-top: 20px;
+   
+}
+.userinput #mail{
+    color: black;
+    border-radius: 7px;
+    border:none;
+    height: 30px;
+    width: 60%;
+    padding: 10px;
+}
+
+#mail::placeholder{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: black; */
+    padding-left: 3px;
+    border: none;
+    outline: none;
+    
+}
+#mail:focus{
+    outline: none;
+}
+#btn{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: tomato;
+    height: 50px;
+    width: 100px;
+    margin-left: 0px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+#btn:hover{
+    background-color: lightseagreen;
+}
+
+
+
+/* popular places */
+.popularplace{
+    /* background-color: blueviolet; */
+    height: 120px;
+    width: 100%;
+    
+}
+
+.popularplace h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.popularplace p{
+    color: gray;
+    font-size: 20px;
+    padding-top:25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* popular places images section  */
+
+.imgs{
+    /* background-color: red; */
+    width: 97%;
+    height:900px;
+    padding: 25px;
+}
+
+.pagecard{
+    height: 800px;
+    width: 90%;
+    /* background-color: #B0BF1A; */
+   margin: 50px 60px;
+   display: grid;
+   gap: 10px;
+   grid-template-columns: auto auto auto;
+}
+
+.kart1{
+    margin: 40px;
+    width: 362px;
+    /* background-color: goldenrod; */
+    box-shadow:   8px       8px      20px rgb(107, 106, 109);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.kart1:hover{
+    color: tomato;
+    cursor: pointer;
+    box-shadow:   8px 8px 20px rgb(133, 104, 190);
+}
+
+.kart1 img{
+    border-radius: 7px 7px 0px 0px;
+}
+
+.contain{ 
+    padding: 60px;
+    /* background-color: #B0BF1A;  */  
+}
+
+.contain p{
+    color: gray;
+}
+
+/* kart button  */
+.bttn{
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.bttn button{
+    height: 60px;
+    width: 140px;
+    background-color: tomato;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 02px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.bttn button:hover{
+    background-color: lightseagreen;
+}
+
+
+
+/* add on quality section  */
+
+.journey{
+   margin-top: 190px;
+   /* background-color: greenyellow;    */
+   width: 100%;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.train{
+    width: 420px;
+    height: 200px;
+    /* background-color: red; */
+}
+
+.hotel{
+    width: 420px;
+    height: 200px;
+    /* background-color: blue;  */
+}
+
+.world{
+    width: 420px;
+    height: 200px;
+    /* background-color: green;  */
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<AboutUs Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.about-us{
+    margin-top: 50px;
+    height: 200vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.bg-img{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('aboutus.png');
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#abt{
+    padding-top: 18%;
+    font-size: 120px;
+}
+
+.our-story{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.our-story h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.our-story p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: gray;
+}
+
+.img-grid{
+    margin-top: 30px;
+    background-color: #B0BF1A;
+    height: 400px;
+    width: 100%;
+    flex-basis:10%;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 35px; 
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 230px;
+}
+
+.c1{
+    height: 350px;
+    width: 400px;
+    margin: 20px;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-blend-mode: overlay;  
+    transition: all 1s ease-in-out; 
+}
+
+.c1:hover{
+     background-color: #717171;
+     background-position: center;
+     box-shadow: 0 0 4px white;
+     cursor: pointer;
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<Contacts section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.contact{
+    margin-top: 50px;
+    height: 200vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.bgr-img{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('ContactUs.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#hcnt{
+    padding-top: 14%;
+    font-size: 120px; 
+}
+
+.map iframe{
+    border:1px solid black;
+    margin:30px 300px;
+}
+
+.feedback{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(216, 204, 204);
+}
+
+.t1{
+    width: 600px;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.form input{
+    align-items: center;
+    justify-content: space-evenly;
+    display: inline; 
+}
+
+.t2{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    /* background-color: forestgreen; */
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Footer Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.footer-section{
+    margin-top: 50px;
+    padding: 20px;
+    width: auto;
+    height: 60vh;
+    background-color: #000033;
+    color: white;
+}
+
+.our-info{
+    display: flex;
+    font-size: 16px; 
+    column-gap: 18%;
+    height: 310px;
+    margin: 30px;
+    /* background-color: #B0BF1A; */
+    padding: 40px;
+}
+.address{
+    padding-top: 40px;
+    width: 200px;
+    height: 100px;
+    /* background-color: #B0BF1A; */
+}
+
+.address p{
+        margin: 10px;
+}
+
+.address i{
+    margin: 10px;
+}
+
+.company{
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    /* background-color: rgb(216, 136, 37); */
+}
+
+.company i{
+   /* color: #B0BF1A; */
+}
+
+.list{
+ text-align: start;
+}
+
+#about{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.popdest{
+    width: 220px;
+    height: 180px;
+    text-align: center;
+    /* background-color: goldenrod;    */
+}
+.country{
+    text-align: start;
+    gap: 30px;
+    margin: 20px;
+    display: flex;
+}
+
+#ab{
+    padding: 7px;
+    list-style: none;
+}
+
+.rights-section{
+    padding-left: 200px;
+    width: 70%;
+    height: 30px;
+    /* background-color: yellowgreen; */
+}
+
+.rights-section p{
+    padding-top:8px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
