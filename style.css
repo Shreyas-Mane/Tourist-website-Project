@@ -11,7 +11,7 @@ body{
 /* <<<<<<<<<<<<<<<<<<<<<<<<<navigation page>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .container{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('web backg.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/web\ backg.jpg');
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -152,6 +152,7 @@ body{
 
 .place ::placeholder, input[type=text]{
     font-size: 15px;
+    text-align: center;
     color: white;
 }
 
@@ -451,7 +452,7 @@ select optgroup{
 }
 
 .bg-img{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('aboutus.png');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/aboutus.png');
     font-family: 'Times New Roman', Times, serif;
     color: rgb(251, 251, 251);
     text-align: center;
@@ -489,14 +490,14 @@ select optgroup{
 
 .img-grid{
     margin-top: 30px;
-    background-color: #B0BF1A;
+    /* background-color: #B0BF1A; */
     height: 400px;
     width: 100%;
     flex-basis:10%;
     display: grid;
-    justify-content: space-evenly;
-    gap: 35px; 
-    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 36px; 
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 230px;
 }
 
@@ -534,7 +535,7 @@ select optgroup{
 }
 
 .bgr-img{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('ContactUs.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/ContactUs.jpg');
     font-family: 'Times New Roman', Times, serif;
     color: rgb(251, 251, 251);
     text-align: center;
@@ -565,18 +566,47 @@ select optgroup{
     background-color: rgb(216, 204, 204);
 }
 
-.t1{
-    width: 600px;
-    height: 300px;
-    /* background-color: red; */
-}
+.t1 {
+    max-width: 320px; /* Set the maximum width of the container */
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left; /* Move the container to the left side */
+  }
+  
+  .t1 input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px); /* Set the width of the input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #000033;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 80px; /* Set the height of the textarea */
+    resize: none; /* Prevent resizing by the user */
+  }
+  
+  button[type="submit"] {
+    width: calc(100% - 20px); /* Set the width of the submit button */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
 
-.form input{
-    align-items: center;
-    justify-content: space-evenly;
-    display: inline; 
-}
-
+  
 .t2{
     display: inline-block;
     text-align: center;
